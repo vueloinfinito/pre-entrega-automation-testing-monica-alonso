@@ -1,0 +1,16 @@
+# Entorno virtual y Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Evidencias generadas durante la ejecución
+reports/*.html
+screenshots/*.png
+logs/*.log
+
+# Configuración local
+.env
+.vscode/
+.idea/
