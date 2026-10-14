@@ -46,7 +46,6 @@ pre-entrega-automation-testing/
 - Tener Git instalado para publicar el proyecto.
 - Contar con conexión a Internet para acceder a SauceDemo e instalar las dependencias.
 
-Selenium moderno utiliza Selenium Manager para resolver el controlador del navegador automáticamente en la mayoría de las instalaciones. Si el entorno corporativo bloquea esta descarga, puede ser necesario configurar manualmente el controlador compatible con la versión de Chrome instalada.
 
 ## Instalación
 
@@ -57,15 +56,6 @@ Desde la carpeta raíz del proyecto:
 ```bash
 python -m venv .venv
 .venv\\Scripts\\activate
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-### Linux / macOS
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
@@ -84,7 +74,7 @@ Generar el reporte HTML solicitado:
 pytest tests/test_saucedemo.py -v --html=reports/reporte.html --self-contained-html
 ```
 
-El reporte se genera luego de ejecutar el comando. Si la ejecución falla antes de completarse, revisá también la salida de la terminal y los archivos de `logs/` y `screenshots/`.
+El reporte se genera luego de ejecutar el comando. 
 
 Para ejecutar todas las pruebas:
 
@@ -119,8 +109,8 @@ pytest -v --html=reports/reporte.html --self-contained-html
 
 ## Publicar en GitHub
 
-1. Creá un repositorio **público** llamado `pre-entrega-automation-testing-nombre-apellido` (reemplazá `nombre-apellido por tu nombre y apellido).
-2. En una terminal, dentro de la carpeta del proyecto, ejecutá:
+1. Creo un repositorio **público** llamado `pre-entrega-automation-testing-monica-alonso` .
+2. En una terminal, dentro de la carpeta del proyecto, ejecuto:
 
 ```bash
 git init
@@ -131,7 +121,7 @@ git remote add origin https://github.com/TU-USUARIO/pre-entrega-automation-testi
 git push -u origin main
 ```
 
-3. Para reflejar el progreso con commits descriptivos, podés usar mensajes como:
+3. Para reflejar el progreso con commits descriptivos, uso mensajes como:
 
 ```bash
 git add README.md requirements.txt .gitignore
@@ -143,11 +133,10 @@ git commit -m "test: automatizar login, catálogo y carrito"
 git push
 ```
 
-Reemplazá `TU-USUARIO` y el nombre del repositorio por los datos reales de tu cuenta. No compartas contraseñas ni tokens de GitHub.
 
 ## Credenciales de prueba
 
 - Usuario: `standard_user`
 - Contraseña: `secret_sauce`
 
-Son credenciales públicas de la aplicación de demostración SauceDemo; no uses contraseñas personales.
+
